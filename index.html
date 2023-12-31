@@ -2,11 +2,223 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    Myself Saumya
+
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Navigation -->
+    <nav class="flex justify-center w-full bg-gray-700 p-6">
+      <ul class="flex gap-8">
+        <li class="font-sans text-2xl">Home</li>
+        <li class="font-sans text-2xl">About Me</li>
+        <li class="font-sans text-2xl">Contact Us</li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-col items-center justify-center mt-4">
+      <!-- About Me Section -->
+      <div class="flex flex-col items-center mb-8">
+        <h2 class="text-3xl font-bold mb-4 underline">About Me</h2>
+        <div class="w-1/2 bg-gray-800 rounded-md p-8 text-center">
+          <img
+            class="rounded-full object-cover h-40 w-40 mx-auto mb-4"
+            src="./images/My_photo.jpg"
+          />
+          <div class="text-lg">
+            <p class="font-bold">Saumya Srivastava</p>
+            <p>Email: saumyasrivastav@gmail.com</p>
+          </div>
+          <p class="mt-4 leading-relaxed font-sans font-bold">
+            Hi, I'm Saumya, a driven and creative web developer currently
+            pursuing my Bachelor's in Computer Science at KIIT University. I'm
+            in my 4th semester of the B.Tech CSE program, where I've been
+            cultivating a strong foundation in both theoretical concepts and
+            practical applications.
+          </p>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <h2 class="text-3xl font-bold mb-4 underline">My Projects</h2>
+      <div class="flex flex-col items-center mb-8 gap-4">
+        <div class="w-11/12 bg-gray-800 rounded-md p-8 text-center mb-4">
+          <div>
+            <h3 class="text-2xl font-bold mb-2">F.R.I.E.N.D.S</h3>
+            <a href="https://friends.saumya.live/" target="_blank">
+              <img
+                class="rounded-md h-40 w-full object-cover mb-2"
+                src="./images/friendsfimg2.jpg"
+              />
+            </a>
+            <p class="text-lg">
+              A web project inspired by the popular TV show F.R.I.E.N.D.S. Check
+              it out
+              <a
+                href="https://friends.saumya.live/"
+                class="text-blue-400"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-11/12 bg-gray-800 rounded-md p-8 text-center mb-4">
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Cat-ai</h3>
+            <a href="https://ai.saumya.live/" target="_blank">
+              <img
+                class="rounded-md h-40 w-full object-cover mb-2"
+                src="./images/cat_ai.png"
+                alt="Cat AI Project"
+              />
+            </a>
+            <p class="text-lg">
+              Explore the world of artificial intelligence with Cat-ai. Visit
+              the project
+              <a
+                href="https://ai.saumya.live/"
+                class="text-blue-400"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-11/12 bg-gray-800 rounded-md p-8 text-center mb-4">
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Bookmark manager</h3>
+            <a href="https://bookmark.saumya.live/" target="_blank">
+              <img
+                class="rounded-md h-40 w-full object-cover mb-2"
+                src="./images/bookmark_manager.png"
+                alt="bookmark_manager Project"
+              />
+            </a>
+            <p class="text-lg">
+              For easy access of your frequently used apps explore the project
+              <a
+                href="https://bookmark.saumya.live/"
+                class="text-blue-400"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-11/12 bg-gray-800 rounded-md p-8 text-center mb-4">
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Calculator</h3>
+            <a href="https://calc.saumya.live/" target="_blank">
+              <img
+                class="rounded-md h-40 w-full object-cover mb-2"
+                src="./images/calculator.jpg"
+                alt="Calculator Project"
+              />
+            </a>
+            <p class="text-lg">
+              Unlock precision with my intuitive calculator.Visit
+              <a
+                href="https://calc.saumya.live/"
+                class="text-blue-400"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <h1 class="text-3xl font-bold mb-4 underline">Skills</h1>
+      <div
+        class="flex flex-wrap mb-8 w-1/2 bg-gray-800 rounded justify-center items-center gap-4"
+      >
+        <div>
+          <img class="h-52 w-52" src="./images/html_logo.webp" alt="" />
+        </div>
+        <div>
+          <img class="h-52 w-52" src="./images/css.webp" alt="" />
+        </div>
+        <div>
+          <img class="h-48 w-52 rounded-full" src="./images/JS.webp" alt="" />
+        </div>
+        <div>
+          <img
+            class="h-48 w-52 rounded-full"
+            src="./images/tailwind_logo.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-48 w-52 rounded-full"
+            src="./images/dsa_logo.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-48 w-52 rounded-full"
+            src="./images/MySql_logo.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-48 w-52 rounded-full"
+            src="./images/rust_logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- contact_info -->
+      <h1 class="text-3xl font-bold mb-4 underline">Contact Me</h1>
+      <div
+        class="flex flex-wrap mb-8 w-1/2 bg-gray-800 rounded justify-center items-center gap-8"
+      >
+        <div>
+          <a href="https://mail.google.com" target="_blank"
+            ><img
+              class="w-44 h-44 object-cover"
+              src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://t.me/ssrivastava24" target="_blank"
+            ><img
+              class="w-44 h-44 object-cover"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/itssaumya_24/" target="_blank"
+            ><img
+              class="w-44 h-44 object-cover"
+              src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="https://github.com/Saumyasrivastava24" target="_blank"
+            ><img
+              class="w-44 h-44 object-cover"
+              src="./images/github_logo.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
