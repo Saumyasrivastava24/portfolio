@@ -12,24 +12,38 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body class="bg-gray-900 text-white font-sans">
     <!-- Navigation -->
-    <nav class="flex justify-center w-full bg-gray-700 p-6">
+    <nav
+      id="home"
+      class="flex fixed top-0 justify-center w-full bg-gray-700 p-6"
+    >
       <ul class="flex gap-8">
-        <li class="font-sans text-2xl">Home</li>
-        <li class="font-sans text-2xl">About Me</li>
-        <li class="font-sans text-2xl">Contact Us</li>
+        <li class="font-sans text-[18px] md:text-2xl">
+          <a href="#home">Home</a>
+        </li>
+        <li class="font-sans text-[18px] md:text-2xl">
+          <a href="#about">About Me</a>
+        </li>
+        <li class="font-sans text-[18px] md:text-2xl">
+          <a href="#contact">Contact Me</a>
+        </li>
       </ul>
     </nav>
 
     <!-- Main Content -->
-    <div class="flex flex-col items-center justify-center mt-4">
+    <div id="about" class="flex flex-col items-center justify-center pt-28">
       <!-- About Me Section -->
       <div class="flex flex-col items-center mb-8">
         <h2 class="text-3xl font-bold mb-4 underline">About Me</h2>
-        <div class="w-1/2 bg-gray-800 rounded-md p-8 text-center">
+        <div class="w-11/12 md:w-1/2 bg-gray-800 rounded-md p-8 text-center">
           <img
             class="rounded-full object-cover h-40 w-40 mx-auto mb-4"
             src="./images/My_photo.jpg"
@@ -144,41 +158,53 @@
       <!-- Skills -->
       <h1 class="text-3xl font-bold mb-4 underline">Skills</h1>
       <div
-        class="flex flex-wrap mb-8 w-1/2 bg-gray-800 rounded justify-center items-center gap-4"
+        class="flex flex-wrap mb-8 w-11/12 md:w-1/2 bg-gray-800 rounded justify-center items-center gap-4"
       >
         <div>
-          <img class="h-52 w-52" src="./images/html_logo.webp" alt="" />
-        </div>
-        <div>
-          <img class="h-52 w-52" src="./images/css.webp" alt="" />
-        </div>
-        <div>
-          <img class="h-48 w-52 rounded-full" src="./images/JS.webp" alt="" />
+          <img
+            class="h-48 md:h-52 w-48 md:w-52 object-cover"
+            src="./images/html_logo.webp"
+            alt=""
+          />
         </div>
         <div>
           <img
-            class="h-48 w-52 rounded-full"
+            class="h-48 md:h-52 w-48 md:w-52 object-cover"
+            src="./images/css.webp"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-48 md:h-52 w-48 md:w-52 rounded-full object-cover"
+            src="./images/JS.webp"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-48 md:h-52 w-48 md:w-52 rounded-full object-cover"
             src="./images/tailwind_logo.png"
             alt=""
           />
         </div>
         <div>
           <img
-            class="h-48 w-52 rounded-full"
+            class="h-48 md:h-52 w-48 md:w-52 rounded-full object-cover"
             src="./images/dsa_logo.png"
             alt=""
           />
         </div>
         <div>
           <img
-            class="h-48 w-52 rounded-full"
+            class="h-48 md:h-52 w-48 md:w-52 rounded-full object-cover"
             src="./images/MySql_logo.png"
             alt=""
           />
         </div>
         <div>
           <img
-            class="h-48 w-52 rounded-full"
+            class="h-48 md:h-52 w-48 md:w-52 rounded-full object-cover"
             src="./images/rust_logo.png"
             alt=""
           />
@@ -186,9 +212,9 @@
       </div>
 
       <!-- contact_info -->
-      <h1 class="text-3xl font-bold mb-4 underline">Contact Me</h1>
+      <h1 id="contact" class="text-3xl font-bold mb-4 underline">Contact Me</h1>
       <div
-        class="flex flex-wrap mb-8 w-1/2 bg-gray-800 rounded justify-center items-center gap-8"
+        class="flex flex-wrap mb-8 p-2 w-11/12 md:w-1/2 bg-gray-800 rounded justify-center items-center gap-8"
       >
         <div>
           <a href="https://mail.google.com" target="_blank"
